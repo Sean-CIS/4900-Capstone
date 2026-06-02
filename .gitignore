@@ -1,0 +1,6 @@
+.env
+backups/*.sql
+!backups/.gitkeep
+.DS_Store
+node_modules/
+*.log
