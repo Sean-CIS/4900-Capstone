@@ -1,0 +1,99 @@
+openapi: 3.0.3
+info:
+  title: CyberSafe LA Clinic Operations Database API
+  version: "1.0.0"
+  description: OpenAPI documentation for the CyberSafe LA Project 2 Clinic Operations Database running through PostgREST.
+servers:
+  - url: http://localhost:3000
+    description: Local Docker Compose PostgREST server
+paths:
+  /business:
+    get:
+      summary: List business records
+      responses:
+        "200":
+          description: Business records returned.
+    post:
+      summary: Create a business record
+      responses:
+        "201":
+          description: Business record created.
+  /contact:
+    get:
+      summary: List contact records
+      responses:
+        "200":
+          description: Contact records returned.
+    post:
+      summary: Create a contact record
+      responses:
+        "201":
+          description: Contact record created.
+  /referral:
+    get:
+      summary: List referral records
+      responses:
+        "200":
+          description: Referral records returned.
+    post:
+      summary: Create a referral record
+      responses:
+        "201":
+          description: Referral record created.
+  /engagement:
+    get:
+      summary: List engagement records
+      responses:
+        "200":
+          description: Engagement records returned.
+    post:
+      summary: Create an engagement record
+      responses:
+        "201":
+          description: Engagement record created.
+  /questionnaire_response:
+    get:
+      summary: List questionnaire response records
+      responses:
+        "200":
+          description: Questionnaire response records returned.
+    post:
+      summary: Create a questionnaire response record
+      responses:
+        "201":
+          description: Questionnaire response record created.
+  /knowledge_base_entry:
+    get:
+      summary: List knowledge base records
+      responses:
+        "200":
+          description: Knowledge base records returned.
+    post:
+      summary: Create a knowledge base record
+      responses:
+        "201":
+          description: Knowledge base record created.
+  /v_active_engagements_by_status:
+    get:
+      summary: View active engagements by status
+      responses:
+        "200":
+          description: Active engagement status summary returned.
+  /v_referral_conversion_by_partner:
+    get:
+      summary: View referral conversion by partner
+      responses:
+        "200":
+          description: Referral conversion summary returned.
+  /v_consultant_workload:
+    get:
+      summary: View consultant workload
+      responses:
+        "200":
+          description: Consultant workload summary returned.
+  /v_questionnaire_risk_summary:
+    get:
+      summary: View questionnaire risk summary
+      responses:
+        "200":
+          description: Questionnaire risk summary returned.
